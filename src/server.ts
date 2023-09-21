@@ -1,0 +1,28 @@
+import cors from 'cors'
+import dotenv from 'dotenv'
+import express, { Application } from 'express'
+import helmet from 'helmet'
+import morgan from 'morgan'
+import { startServer } from './configs/db.config'
+import { errorHandlerMiddleware } from './middlewares/errors/errorHandlers'
+import { notFoundMiddleware } from './middlewares/errors/notFound'
+import userRouter from './routes/user.route'
+
+// Access environment variables
+dotenv.config()
+
+// Initialize app with express
+const app: Application = express()
+
+// Load App Middleware
+app.use(helmet())
+app.use(cors())
+app.use(morgan('common'))
+
+//Connect database
+startServer(app)
+
+// Router
+app.use('/v1', userRouter)
+app.use(notFoundMiddleware)
+app.use(errorHandlerMiddleware)
