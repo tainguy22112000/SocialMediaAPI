@@ -22,3 +22,14 @@
 09/29/2023	11:40:25 --------- idError: c4492c9f-e3d9-462b-a592-29564749cbff ---- /v1/users/login ---- POST ---- Invalid password
 09/29/2023	11:41:21 --------- idError: ad7d728f-9ecc-49e4-853e-ca00d5edd552 ---- /v1/users/login ---- POST ---- Invalid password
 09/29/2023	11:45:35 --------- idError: 88967ed0-3c68-44ca-b567-b4ee6532dcdb ---- /v1/users/login ---- POST ---- Invalid password
+09/29/2023	13:51:42 --------- idError: f33344c1-5d07-4dbf-9854-36b1e96274f1 ---- /v1/users/login ---- POST ---- Invalid password
+09/29/2023	13:56:35 --------- idError: 04675dc2-acb6-4139-aecd-6c4f20230f76 ---- /v1/users/list ---- GET ---- Route - /v1/users/list  Not Found
+09/29/2023	15:01:35 --------- idError: da7ebf31-fe11-4759-ba0f-bb63d755faa3 ---- /v1/users/list ---- GET ---- Unauthorized
+09/29/2023	15:20:43 --------- idError: b2f6dd5e-b27e-474f-a6b2-1363b57e6b2c ---- /v1/users/list ---- GET ---- Unauthorized
+09/29/2023	15:21:05 --------- idError: 05415d87-ffce-45ce-9f5a-cdb813c742c8 ---- /v1/users/list ---- GET ---- Unauthorized
+09/29/2023	15:26:48 --------- idError: bfa680c5-941f-4e60-9201-0d2e932f5cf2 ---- /v1/users/login ---- POST ---- Invalid password
+09/29/2023	15:26:57 --------- idError: e21b5f28-ec17-4adc-9861-855643b29fa5 ---- /v1/users/login ---- POST ---- Invalid password
+09/29/2023	15:27:43 --------- idError: cee9bc45-2622-4a3b-b5e8-b0d4e9e818a0 ---- /v1/users/login ---- POST ---- This user is not registered
+09/29/2023	15:28:14 --------- idError: da1e0fc8-503e-4b9b-9d01-5ed8d6eabce7 ---- /v1/users/login ---- POST ---- This user has not been registered
+09/29/2023	15:28:21 --------- idError: 5551857a-ae63-40ca-9d12-9ee434306841 ---- /v1/users/login ---- POST ---- Invalid password
+09/29/2023	15:28:25 --------- idError: 16d0afcc-e1f8-4a99-a381-52368c91256e ---- /v1/users/login ---- POST ---- Invalid password

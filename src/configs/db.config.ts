@@ -1,5 +1,6 @@
 import { Application } from 'express'
 import mongoose from 'mongoose'
+import { enviromentConfig } from './env.config'
 
 export const connectDB = (MONGODB_URI?: string) => {
   mongoose.connect(MONGODB_URI || '', {
@@ -23,12 +24,10 @@ export const connectDB = (MONGODB_URI?: string) => {
 }
 
 export const startServer = async (app: Application) => {
-  const port = process.env.PORT || 8000
-
   try {
-    await connectDB(process.env.MONGODB_URL)
-    app.listen(port, () => {
-      console.log(`Server is Fire at http://localhost:${port}`)
+    await connectDB(enviromentConfig.MONGODB_CONNECTION_STRING)
+    app.listen(enviromentConfig.PORT, () => {
+      console.log(`Server is Fire at http://localhost:${enviromentConfig.PORT}`)
     })
   } catch (err: any) {
     console.log(
