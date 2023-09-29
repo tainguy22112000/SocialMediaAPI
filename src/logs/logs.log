@@ -1,3 +1,24 @@
 09/21/2023	17:03:47 --------- idError: 41e2af28-2b63-48ff-b8ab-812e9d614448 ---- /v1/users ---- GET ---- This is error
 09/21/2023	17:04:00 --------- idError: f770f5c7-86f0-4b46-a269-2c2e1dc484a8 ---- /v1/users ---- GET ---- This is error
 09/21/2023	17:04:06 --------- idError: 72c2e7f3-5d96-4dac-884d-a5a943fee79f ---- /v1/users ---- GET ---- This is error
+09/28/2023	14:00:41 --------- idError: a7767b78-2f93-4b28-b7b1-1f14fde40ee0 ---- /v1/users/register ---- POST ---- Bad Request
+09/28/2023	14:00:46 --------- idError: 5afba27e-d7ab-40ce-8c6c-3d434e3c0a29 ---- /v1/users/register ---- POST ---- Bad Request
+09/28/2023	14:02:13 --------- idError: 08a04de0-2b83-4760-beab-ba5aae80cf79 ---- /v1/users/register ---- POST ---- TaiNguy has been already registered
+09/28/2023	16:00:40 --------- idError: 373d1a4c-f44b-4a6f-825f-7fa93a2a634e ---- /v1/users/register ---- POST ---- TaiNguy has been already registered
+09/28/2023	16:01:58 --------- idError: 9dede4e8-8f5c-45dd-b907-6146781cafb8 ---- /v1/users/register ---- POST ---- "email" must be a valid email
+09/28/2023	16:03:29 --------- idError: 9c89f18a-4009-4616-a2e0-338d38e973a6 ---- /v1/users/register ---- POST ---- "email" must be a valid email
+09/28/2023	16:03:58 --------- idError: 672fd5f9-76dc-4416-aaae-bde4015ff8e5 ---- /v1/users/register ---- POST ---- "email" must be a valid email
+09/28/2023	16:04:02 --------- idError: 8d41db9c-faab-46bc-a0f4-0e8e33d026f1 ---- /v1/users/register ---- POST ---- "email" must be a valid email
+09/28/2023	16:04:27 --------- idError: 7227dcd5-cb7e-4c55-9298-894241252a27 ---- /v1/users/register ---- POST ---- "email" with value "tainguy2" fails to match the required pattern: /gmail.com$/
+09/28/2023	17:12:30 --------- idError: 2304a388-1bd7-483c-9358-2f6010839d3c ---- /v1/users/register ---- POST ---- "password" length must be at least 4 characters long
+09/28/2023	17:47:02 --------- idError: 5547072d-b643-429e-9b07-0539ae609e05 ---- /v1/users/register ---- POST ---- TaiNguy2@gmail.com has been already registered
+09/29/2023	10:18:39 --------- idError: f42dcfac-148b-4cb5-917b-b82a7f829b22 ---- /v1/users/register ---- POST ---- TaiNguy2@gmail.com has been already registered
+09/29/2023	11:29:08 --------- idError: 115cd78e-2b8b-4571-aaf4-b0769cb00a28 ---- /v1/users/login ---- POST ---- "password" length must be at least 4 characters long
+09/29/2023	11:29:19 --------- idError: 995805e7-13d9-4b88-b8bd-2966a8e26399 ---- /v1/users/login ---- POST ---- User is not registered
+09/29/2023	11:29:50 --------- idError: 7e9051df-0cae-4373-bb80-f0d24a2bacc6 ---- /v1/users/login ---- POST ---- Invalid password !!!
+09/29/2023	11:30:13 --------- idError: 3563a23d-1f33-4eaa-b19e-82018fe6e01c ---- /v1/users/login ---- POST ---- Unauthorized
+09/29/2023	11:40:10 --------- idError: 74e43f71-225c-4f23-b404-a6354849f0a8 ---- /v1/users/login ---- POST ---- Invalid password
+09/29/2023	11:40:18 --------- idError: dd98285d-5191-4a00-abf1-79faa2a0a25e ---- /v1/users/register ---- POST ---- tainguy@gmail.com has been already registered
+09/29/2023	11:40:25 --------- idError: c4492c9f-e3d9-462b-a592-29564749cbff ---- /v1/users/login ---- POST ---- Invalid password
+09/29/2023	11:41:21 --------- idError: ad7d728f-9ecc-49e4-853e-ca00d5edd552 ---- /v1/users/login ---- POST ---- Invalid password
+09/29/2023	11:45:35 --------- idError: 88967ed0-3c68-44ca-b567-b4ee6532dcdb ---- /v1/users/login ---- POST ---- Invalid password

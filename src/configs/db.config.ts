@@ -32,7 +32,8 @@ export const startServer = async (app: Application) => {
     })
   } catch (err: any) {
     console.log(
-      'Database connection error. Please make sure your database is running ...'
+      'Database connection error. Please make sure your database is running ...',
+      err
     )
   }
 }
