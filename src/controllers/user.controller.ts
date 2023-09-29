@@ -1,4 +1,5 @@
 import { errorMessage } from '@/constants'
+import { signAccessToken } from '@/middlewares/auth/signAccessToken'
 import { userValidation } from '@/middlewares/validations'
 import UserModel from '@/models/User.model'
 import { NextFunction, Request, Response } from 'express'
@@ -44,7 +45,22 @@ export const userController = {
         throw createHttpError.Unauthorized(errorMessage.INVALID_PASSWORD)
       }
 
-      res.send(user)
+      const accessToken = await signAccessToken(user._id)
+
+      res.status(200).json({
+        accessToken,
+        email,
+        message: 'Login successfully'
+      })
+    } catch (err) {
+      next(err)
+    }
+  },
+  list: async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      console.log(req.headers)
+      const user = await UserModel.find()
+      res.status(200).json({ user })
     } catch (err) {
       next(err)
     }
