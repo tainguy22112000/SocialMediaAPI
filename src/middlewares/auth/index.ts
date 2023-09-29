@@ -1,2 +1,2 @@
-export * from './signAccessToken'
 export * from './verifyAccessToken'
+export * from './generateToken'

@@ -26,5 +26,6 @@ router.delete(
 router.post('/users/register', userController.register)
 router.post('/users/login', userController.login)
 router.get('/users/list', verifyAccessToken, userController.list)
+router.post('/users/refresh-token', userController.refreshToken)
 
 export = router

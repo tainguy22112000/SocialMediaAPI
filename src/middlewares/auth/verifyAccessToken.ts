@@ -24,7 +24,14 @@ export const verifyAccessToken = async (
     enviromentConfig.ACCESS_TOKEN_SECRET_KEY as JWT.Secret,
     async (err: VerifyErrors | null, payload?: string | JWT.JwtPayload) => {
       try {
-        if (err) next(createHttpError.Unauthorized())
+        if (err) {
+          const errorMsg =
+            err.name === 'JsonWebTokenError'
+              ? errorMessage.UNAUTHORIZED
+              : err.message
+          next(createHttpError.Unauthorized(errorMsg))
+        }
+
         req.payload = payload
         next()
       } catch (err) {

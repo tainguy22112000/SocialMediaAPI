@@ -33,3 +33,7 @@
 09/29/2023	15:28:14 --------- idError: da1e0fc8-503e-4b9b-9d01-5ed8d6eabce7 ---- /v1/users/login ---- POST ---- This user has not been registered
 09/29/2023	15:28:21 --------- idError: 5551857a-ae63-40ca-9d12-9ee434306841 ---- /v1/users/login ---- POST ---- Invalid password
 09/29/2023	15:28:25 --------- idError: 16d0afcc-e1f8-4a99-a381-52368c91256e ---- /v1/users/login ---- POST ---- Invalid password
+09/29/2023	16:33:54 --------- idError: ffc64cec-5d1d-4a2e-a5f2-690fd0cfdf6d ---- /v1/users/login ---- POST ---- secretOrPrivateKey must have a value
+09/29/2023	16:42:28 --------- idError: 70320a0d-f0a8-45f6-afc8-ee021e5dd431 ---- /v1/users/login ---- POST ---- Expected "payload" to be a plain object.
+09/29/2023	17:01:56 --------- idError: af1a14e2-1aaf-4737-bfc6-7779d963c11c ---- /v1/users/list ---- GET ---- jwt expired
+09/29/2023	17:39:14 --------- idError: e744aeb7-8145-435d-b331-f5ab7d7f8d5d ---- /v1/users/list ---- GET ---- jwt expired
