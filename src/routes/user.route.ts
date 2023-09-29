@@ -1,3 +1,4 @@
+import { userController } from '@/controllers/user.controller'
 import express, { NextFunction, Request, Response } from 'express'
 import createHttpError from 'http-errors'
 
@@ -20,5 +21,8 @@ router.delete(
     })
   }
 )
+
+router.post('/users/register', userController.register)
+router.post('/users/login', userController.login)
 
 export = router

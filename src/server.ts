@@ -18,6 +18,8 @@ const app: Application = express()
 app.use(helmet())
 app.use(cors())
 app.use(morgan('common'))
+app.use(express.json())
+app.use(express.urlencoded({ extended: true }))
 
 //Connect database
 startServer(app)
