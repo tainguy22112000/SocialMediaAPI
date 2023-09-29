@@ -1,5 +1,8 @@
+import { enviromentConfig } from '@/configs/env.config'
 import { errorMessage } from '@/constants'
-import { signAccessToken } from '@/middlewares/auth/signAccessToken'
+import { IAuthRequest } from '@/interfaces/User'
+import { generateToken } from '@/middlewares/auth'
+import { verifyRefreshToken } from '@/middlewares/auth/verifyRefreshToken'
 import { userValidation } from '@/middlewares/validations'
 import UserModel from '@/models/User.model'
 import { NextFunction, Request, Response } from 'express'
@@ -26,6 +29,7 @@ export const userController = {
       next(err)
     }
   },
+
   login: async (req: Request, res: Response, next: NextFunction) => {
     try {
       const { email, password } = req.body
@@ -45,10 +49,20 @@ export const userController = {
         throw createHttpError.Unauthorized(errorMessage.INVALID_PASSWORD)
       }
 
-      const accessToken = await signAccessToken(user._id)
+      const accessToken = await generateToken(
+        { userId: user._id },
+        enviromentConfig.ACCESS_TOKEN_SECRET_KEY,
+        { expiresIn: '10s' }
+      )
+      const refreshToken = await generateToken(
+        { userId: user._id },
+        enviromentConfig.REFRESH_ACCESS_TOKEN_SECRET_KEY,
+        { expiresIn: '1y' }
+      )
 
       res.status(200).json({
         accessToken,
+        refreshToken,
         email,
         message: 'Login successfully'
       })
@@ -56,11 +70,45 @@ export const userController = {
       next(err)
     }
   },
+
   list: async (req: Request, res: Response, next: NextFunction) => {
     try {
-      console.log(req.headers)
       const user = await UserModel.find()
       res.status(200).json({ user })
+    } catch (err) {
+      next(err)
+    }
+  },
+
+  refreshToken: async (
+    req: IAuthRequest,
+    res: Response,
+    next: NextFunction
+  ) => {
+    try {
+      const { refreshToken } = req.body
+      if (!refreshToken) {
+        next(createHttpError.BadRequest())
+      }
+
+      const userId = await verifyRefreshToken(refreshToken)
+
+      const accessToken = await generateToken(
+        { userId: userId },
+        enviromentConfig.ACCESS_TOKEN_SECRET_KEY,
+        { expiresIn: '30s' }
+      )
+
+      const newRefreshToken = await generateToken(
+        { userId: userId },
+        enviromentConfig.REFRESH_ACCESS_TOKEN_SECRET_KEY,
+        { expiresIn: '1y' }
+      )
+
+      res.status(200).json({
+        accessToken,
+        refreshToken: newRefreshToken
+      })
     } catch (err) {
       next(err)
     }
