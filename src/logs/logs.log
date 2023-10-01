@@ -37,3 +37,15 @@
 09/29/2023	16:42:28 --------- idError: 70320a0d-f0a8-45f6-afc8-ee021e5dd431 ---- /v1/users/login ---- POST ---- Expected "payload" to be a plain object.
 09/29/2023	17:01:56 --------- idError: af1a14e2-1aaf-4737-bfc6-7779d963c11c ---- /v1/users/list ---- GET ---- jwt expired
 09/29/2023	17:39:14 --------- idError: e744aeb7-8145-435d-b331-f5ab7d7f8d5d ---- /v1/users/list ---- GET ---- jwt expired
+09/30/2023	11:29:16 --------- idError: 36dd309e-125f-4986-b333-c11c949472f7 ---- /v1/users/register ---- POST ---- jayden3@gmail.com has been already registered
+09/30/2023	11:29:29 --------- idError: 45a3ff42-20b1-42a1-a09f-86bcc08dc966 ---- /v1/users/login ---- POST ---- secretOrPrivateKey must have a value
+09/30/2023	11:29:45 --------- idError: b6f78c18-147e-4f8e-ab8d-6ae70eb47e80 ---- /v1/users/list ---- GET ---- Auth Failed (Unauthorized)
+09/30/2023	11:43:33 --------- idError: 375469f6-65af-4016-b3cc-f00ae5bd3718 ---- /v1/users/list ---- GET ---- Auth Failed (Unauthorized)
+09/30/2023	11:43:51 --------- idError: 683cc578-f775-41ea-b8bb-a156c56c6c36 ---- /v1/users/list ---- GET ---- jwt expired
+09/30/2023	12:31:41 --------- idError: c4375361-ac20-4e06-bccb-5856a6c65a93 ---- /v1/users/list ---- GET ---- jwt expired
+09/30/2023	12:33:17 --------- idError: 4615f154-c131-4d3d-8ce1-8a1f30f8821c ---- /v1/users/list ---- GET ---- jwt expired
+10/01/2023	20:52:22 --------- idError: 8aaa1e28-b1cd-4455-8c22-9cc1dd3733c3 ---- /v1/users/list ---- GET ---- jwt expired
+10/01/2023	20:53:48 --------- idError: 542688be-291e-4576-acdc-ff1918a0dda8 ---- /info ---- POST ---- Route - /info  Not Found
+10/01/2023	20:59:41 --------- idError: b6351176-cc0f-4dc9-9102-6282d786417a ---- /v1/users/refresh-token ---- POST ---- invalid token
+10/01/2023	21:35:13 --------- idError: 6976499a-71dd-4630-8e7d-86e50645c297 ---- /v1/users/logout ---- DELETE ---- invalid signature
+10/01/2023	21:35:21 --------- idError: 7d22674a-b825-45b5-88fd-b70699e1bcae ---- /v1/users/logout ---- DELETE ---- invalid signature

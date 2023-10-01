@@ -1,4 +1,5 @@
 import { enviromentConfig } from '@/configs/env.config'
+import client from '@/configs/redis.config'
 import { errorMessage } from '@/constants'
 import { IAuthRequest } from '@/interfaces/User'
 import { generateToken } from '@/middlewares/auth'
@@ -52,7 +53,7 @@ export const userController = {
       const accessToken = await generateToken(
         { userId: user._id },
         enviromentConfig.ACCESS_TOKEN_SECRET_KEY,
-        { expiresIn: '10s' }
+        { expiresIn: '10m' }
       )
       const refreshToken = await generateToken(
         { userId: user._id },
@@ -60,12 +61,36 @@ export const userController = {
         { expiresIn: '1y' }
       )
 
+      await client.set(user._id.toString(), refreshToken.toString(), {
+        EX: 365 * 24 * 60 * 60
+      })
+
       res.status(200).json({
         accessToken,
         refreshToken,
         email,
         message: 'Login successfully'
       })
+    } catch (err) {
+      next(err)
+    }
+  },
+
+  logout: async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const { refreshToken } = req.body
+
+      if (!refreshToken) {
+        next(createHttpError.BadRequest())
+      }
+
+      const userId = await verifyRefreshToken(refreshToken)
+      try {
+        await client.del(userId)
+        res.status(200).json({ message: 'Log out !!!' })
+      } catch (err) {
+        next(createHttpError.InternalServerError())
+      }
     } catch (err) {
       next(err)
     }
