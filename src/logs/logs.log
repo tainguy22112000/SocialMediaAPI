@@ -49,3 +49,20 @@
 10/01/2023	20:59:41 --------- idError: b6351176-cc0f-4dc9-9102-6282d786417a ---- /v1/users/refresh-token ---- POST ---- invalid token
 10/01/2023	21:35:13 --------- idError: 6976499a-71dd-4630-8e7d-86e50645c297 ---- /v1/users/logout ---- DELETE ---- invalid signature
 10/01/2023	21:35:21 --------- idError: 7d22674a-b825-45b5-88fd-b70699e1bcae ---- /v1/users/logout ---- DELETE ---- invalid signature
+10/09/2023	16:54:45 --------- idError: 56ae9623-f67b-40ed-84d8-d172fe4ba3f3 ---- /v1/users/register ---- POST ---- "email" must be a valid email
+10/09/2023	16:55:27 --------- idError: 3bca7b5d-2ba0-4a6b-8834-8299ba19d52e ---- /v1/users/register ---- POST ---- "email" with value "tainguygmail2.com" fails to match the required pattern: /gmail.com$/
+10/09/2023	17:01:24 --------- idError: a0104574-0076-46a4-b5e1-f052ff96a4fe ---- /v1/users/register ---- POST ---- "email" with value "tainguy@gmail2.com" fails to match the required pattern: /gmail.com$/
+10/09/2023	17:03:31 --------- idError: a90dd20a-aa7f-44bd-a9c1-5d61cb81de51 ---- /v1/users/register ---- POST ---- tainguy1233hh3@gmail.com has been already registered
+10/09/2023	17:31:32 --------- idError: def8b912-e46f-475c-a055-66c47a1f578b ---- /v1/users/login ---- POST ---- NOAUTH Authentication required.
+10/09/2023	17:32:21 --------- idError: 110796c4-e42a-4949-b1dc-87409db9fc30 ---- /v1/users/login ---- POST ---- NOAUTH Authentication required.
+10/09/2023	17:35:19 --------- idError: 9b62892b-d01b-47b9-92b2-76d367f6d0b0 ---- /v1/users/login ---- POST ---- NOAUTH Authentication required.
+10/09/2023	17:36:01 --------- idError: afa81d30-6d32-45d4-a74d-f75ed00056b3 ---- /v1/users/list ---- GET ---- jwt expired
+10/09/2023	17:36:11 --------- idError: 3b2cacb9-2926-4c91-ad31-29b93cbc4cfd ---- /v1/users/login ---- POST ---- NOAUTH Authentication required.
+10/09/2023	17:38:04 --------- idError: 9759dd9d-c55c-4b96-af8a-4ecf5918e703 ---- /v1/users/login ---- POST ---- NOAUTH Authentication required.
+10/09/2023	17:38:14 --------- idError: 8c907a8d-dd79-424e-8e34-003ec99980b3 ---- /v1/users/register ---- POST ---- tainguy12333hh3@gmail.com has been already registered
+10/09/2023	17:38:17 --------- idError: 83efcdb0-d77f-4173-b37c-5783f5f89ea8 ---- /v1/users/register ---- POST ---- tainguy12333hh3@gmail.com has been already registered
+10/09/2023	17:38:32 --------- idError: 6a54eeb2-5f2a-40bb-a932-b4896219ab9d ---- /v1/users/login ---- POST ---- NOAUTH Authentication required.
+10/09/2023	17:46:31 --------- idError: cb8baf4a-e928-4468-a113-20ce44b88c89 ---- /v1/users/login ---- POST ---- NOAUTH Authentication required.
+10/09/2023	17:46:33 --------- idError: 38936698-19e6-4997-bcc4-b6b6e0d1d59f ---- /v1/users/login ---- POST ---- NOAUTH Authentication required.
+10/09/2023	17:47:21 --------- idError: cd4b9cd9-ac15-4ac7-bab6-779fd48e87f5 ---- /v1/users/login ---- POST ---- NOAUTH Authentication required.
+10/09/2023	17:56:42 --------- idError: ea6020ec-71be-44ba-9cdd-3e1704219d5d ---- /v1/users/login ---- POST ---- user.checkPassword is not a function

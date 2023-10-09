@@ -7,6 +7,11 @@ interface IUser extends Document {
   password: string
 }
 
+interface IUserRegister {
+  email: string
+  password: string
+}
+
 interface IUserDocument extends IUser {
   checkPassword(password: string): Promise<boolean>
 }
@@ -17,4 +22,4 @@ interface IAuthRequest extends Request {
   payload?: string | JWT.JwtPayload
 }
 
-export { IAuthRequest, IUser, IUserDocument }
+export { IAuthRequest, IUser, IUserDocument, IUserRegister }
