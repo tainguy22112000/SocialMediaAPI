@@ -12,6 +12,11 @@ interface IUserRegister {
   password: string
 }
 
+interface IToken {
+  refreshToken: string
+  accessToken: string
+}
+
 interface IUserDocument extends IUser {
   checkPassword(password: string): Promise<boolean>
 }
@@ -22,4 +27,4 @@ interface IAuthRequest extends Request {
   payload?: string | JWT.JwtPayload
 }
 
-export { IAuthRequest, IUser, IUserDocument, IUserRegister }
+export { IAuthRequest, IUser, IUserDocument, IUserRegister, IToken }

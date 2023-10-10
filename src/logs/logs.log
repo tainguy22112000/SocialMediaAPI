@@ -66,3 +66,17 @@
 10/09/2023	17:46:33 --------- idError: 38936698-19e6-4997-bcc4-b6b6e0d1d59f ---- /v1/users/login ---- POST ---- NOAUTH Authentication required.
 10/09/2023	17:47:21 --------- idError: cd4b9cd9-ac15-4ac7-bab6-779fd48e87f5 ---- /v1/users/login ---- POST ---- NOAUTH Authentication required.
 10/09/2023	17:56:42 --------- idError: ea6020ec-71be-44ba-9cdd-3e1704219d5d ---- /v1/users/login ---- POST ---- user.checkPassword is not a function
+10/10/2023	16:16:09 --------- idError: 572a64f8-cb7c-4a5e-b9f2-c8f9d59a39e8 ---- /v1/users/logout ---- POST ---- Route - /v1/users/logout  Not Found
+10/10/2023	16:16:49 --------- idError: 2c58fca5-7b91-4a5f-817a-6b00ecb17486 ---- /v1/users/log-out ---- POST ---- Route - /v1/users/log-out  Not Found
+10/10/2023	16:16:54 --------- idError: 2ce38278-3c32-443b-b07d-e0f2ef62dcc8 ---- /v1/users/logout ---- POST ---- Route - /v1/users/logout  Not Found
+10/10/2023	16:17:12 --------- idError: c622c9b7-13f9-4b18-814a-75d5911b5c36 ---- /v1/users/logout ---- DELETE ---- Bad Request
+10/10/2023	16:17:21 --------- idError: 84f582f8-90a1-4661-ae4e-d64f4093a4cc ---- /v1/users/logout ---- DELETE ---- Bad Request
+10/10/2023	16:18:06 --------- idError: b42803d9-26b3-4f20-b15b-31005fcce405 ---- /v1/users/logout ---- DELETE ---- Bad Request
+10/10/2023	16:18:34 --------- idError: 7765c974-a219-46d3-8023-848f938d9d23 ---- /v1/users/logout ---- DELETE ---- Bad Request
+10/10/2023	16:19:12 --------- idError: 30dbfcec-cb2f-4e62-9c79-f25c9873fb88 ---- /v1/users/logout ---- DELETE ---- Unauthorized
+10/10/2023	16:19:43 --------- idError: 01b82bbf-51cb-4128-973d-dfd12c4d2cdb ---- /v1/users/logout ---- DELETE ---- invalid signature
+10/10/2023	16:20:23 --------- idError: d2a4bd1d-cc43-49f1-aaa9-9c531e000ae1 ---- /v1/users/logout ---- DELETE ---- Unauthorized
+10/10/2023	16:23:15 --------- idError: bb46fbb8-da50-40f3-9eab-e2d376dac0bf ---- /v1/users/refresh-token ---- POST ---- Unauthorized
+10/10/2023	16:25:08 --------- idError: dc94cb83-46a5-4d41-a4bb-0c0204a2d86f ---- /v1/users/logout ---- DELETE ---- invalid signature
+10/10/2023	16:25:16 --------- idError: 26994ae5-2c1a-4664-af14-05ba65b13a02 ---- /v1/users/refresh-token ---- POST ---- Unauthorized
+10/10/2023	16:25:26 --------- idError: 685c6b83-d39e-402b-99ff-02fda8332881 ---- /v1/users/refresh-token ---- POST ---- Unauthorized
