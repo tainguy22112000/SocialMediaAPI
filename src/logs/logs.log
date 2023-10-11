@@ -80,3 +80,14 @@
 10/10/2023	16:25:08 --------- idError: dc94cb83-46a5-4d41-a4bb-0c0204a2d86f ---- /v1/users/logout ---- DELETE ---- invalid signature
 10/10/2023	16:25:16 --------- idError: 26994ae5-2c1a-4664-af14-05ba65b13a02 ---- /v1/users/refresh-token ---- POST ---- Unauthorized
 10/10/2023	16:25:26 --------- idError: 685c6b83-d39e-402b-99ff-02fda8332881 ---- /v1/users/refresh-token ---- POST ---- Unauthorized
+10/11/2023	11:53:49 --------- idError: f355654b-a647-407f-aad5-abc9dc30229f ---- /v1/users/register-otp ---- POST ---- Unexpected token } in JSON at position 43
+10/11/2023	11:53:54 --------- idError: f31cf9c3-f27d-4a19-8fea-0b5017305b48 ---- /v1/users/register-otp ---- POST ---- "password" is required
+10/11/2023	11:55:26 --------- idError: c317fd2a-91d0-4219-a2d3-ef5df8c01c4f ---- /v1/users/register-otp ---- POST ---- tainguy12333hh3@gmail.com has been already registered
+10/11/2023	14:25:35 --------- idError: 9cb922e5-60b9-44f3-a8de-dc51448229d6 ---- /v1/users/verify-otp ---- POST ---- "password" is not allowed
+10/11/2023	14:25:56 --------- idError: a72feb74-90be-446a-ba27-370d59d36a98 ---- /v1/users/verify-otp ---- POST ---- "otp" is not allowed
+10/11/2023	14:41:30 --------- idError: 4b8f37d7-dbed-4864-8c90-3256451a46d5 ---- /v1/users/verify-otp ---- POST ---- "otp" is not allowed
+10/11/2023	14:41:49 --------- idError: 64fbcbc9-f5db-4aba-9070-63960fb41987 ---- /v1/users/verify-otp ---- POST ---- "otp" is not allowed
+10/11/2023	14:45:15 --------- idError: ced3eb92-2099-445b-a8d0-f94913caf4d2 ---- /v1/users/verify-otp ---- POST ---- "otp" must be a string
+10/11/2023	15:03:11 --------- idError: bb83d89b-8ee4-4c41-be79-445887a214e2 ---- /v1/users/register-otp ---- POST ---- tainguy5@gmail.com has been already registered
+10/11/2023	15:03:16 --------- idError: cb8d56f4-fd7c-4e01-8368-11be9f736fda ---- /v1/users/register-otp ---- POST ---- "email" with value "tainguy5@gma3il.com" fails to match the required pattern: /gmail.com$/
+10/11/2023	15:13:36 --------- idError: 053cab50-6d96-4867-9b2d-3130dbfc8afa ---- /v1/users/register-otp ---- POST ---- tainguy6@gmail.com has been already registered
