@@ -21,7 +21,9 @@ export const userController = {
     try {
       const { code, data } = await userService.registerOtp(req.body)
 
-      return res.status(code).json({ message: 'OTP was sent via email', data })
+      return res
+        .status(code)
+        .json({ message: `OTP was sent to ${req.body.email} via email`, data })
     } catch (err) {
       next(err)
     }
