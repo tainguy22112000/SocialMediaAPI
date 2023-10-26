@@ -1,6 +1,8 @@
+import { enviromentConfig } from '@/configs/env.config'
 import { errorMessage } from '@/constants'
 import { IUserRegister } from '@/interfaces/User'
 import UserModel from '@/models/User.model'
+import { sendMail } from '@/utils/sendMail'
 import createHttpError from 'http-errors'
 import otpGenerator from 'otp-generator'
 import otpService from './otp.service'
@@ -30,6 +32,12 @@ const userService = {
       specialChars: false,
       lowerCaseAlphabets: false,
       upperCaseAlphabets: false
+    })
+
+    sendMail({
+      userEmail: email,
+      subject: 'Verify OTP code',
+      text: `Hi ${email}. \n Your OTP is ${otp} \n If you have any questions, please contact us via this email address ${enviromentConfig.ROOT_EMAIL}`
     })
 
     console.log({ otp })
