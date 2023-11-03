@@ -5,11 +5,17 @@ import { Document } from 'mongoose'
 interface IUser extends Document {
   username: string
   password: string
+  firstName: string
+  lastName: string
+  address?: string
+  dateOfBirth?: string
+  phoneNumber?: string
+  gender: 'male' | 'female'
+  bio?: string
 }
 
-interface IUserRegister {
+interface IUserRegister extends IUser {
   email: string
-  password: string
 }
 
 interface IToken {
@@ -25,6 +31,18 @@ interface IAuthRequest extends Request {
   headers: { authorization?: string; Authorization?: string }
   cookies: { authToken?: string; accessToken?: string; refreshToken?: string }
   payload?: string | JWT.JwtPayload
+  limit?: number
 }
 
-export { IAuthRequest, IUser, IUserDocument, IUserRegister, IToken }
+interface ILimitRequest extends Request {
+  limit: number
+}
+
+export {
+  IAuthRequest,
+  IUser,
+  IUserDocument,
+  IUserRegister,
+  IToken,
+  ILimitRequest
+}

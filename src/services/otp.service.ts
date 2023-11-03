@@ -3,6 +3,7 @@ import OtpModel from '@/models/Otp.model'
 import bcrypt from 'bcrypt'
 import userService from './user.service'
 import { errorMessage } from '@/constants'
+import { IUserRegister } from '@/interfaces/User'
 
 const otpService = {
   insertOtp: async ({ email, otp }: TCreateOtp) => {
@@ -20,7 +21,23 @@ const otpService = {
     return await bcrypt.compare(otp, hashOtp)
   },
 
-  verifyOtp: async ({ email, password, otp }: IVerifyOtp) => {
+  verifyOtp: async ({
+    email,
+    password,
+    otp,
+    firstName,
+    lastName,
+    gender,
+    phoneNumber
+  }: IVerifyOtp) => {
+    const userData = {
+      email,
+      password,
+      firstName,
+      lastName,
+      gender,
+      phoneNumber
+    } as IUserRegister
     // check existed email
     const isExisted = await userService.checkEmail({ email })
     if (isExisted)
@@ -45,7 +62,7 @@ const otpService = {
     })
 
     if (isValid && email === lastOtp.email) {
-      const user = await userService.register({ email, password })
+      const user = await userService.register(userData)
 
       if (user) {
         await OtpModel.deleteMany({ email })

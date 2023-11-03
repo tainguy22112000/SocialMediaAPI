@@ -8,13 +8,33 @@ import otpGenerator from 'otp-generator'
 import otpService from './otp.service'
 
 const userService = {
-  register: async ({ email, password }: IUserRegister) => {
+  register: async ({
+    email,
+    password,
+    firstName,
+    lastName,
+    bio,
+    gender,
+    address,
+    phoneNumber,
+    dateOfBirth
+  }: IUserRegister) => {
     const isExisted = await UserModel.findOne({ username: email })
     if (isExisted) {
       throw createHttpError.Conflict(errorMessage.registerd(email))
     }
 
-    const user = new UserModel({ username: email, password })
+    const user = new UserModel({
+      username: email,
+      password,
+      firstName,
+      lastName,
+      bio,
+      gender,
+      address,
+      phoneNumber,
+      dateOfBirth
+    })
     return (await user.save()).toObject()
   },
 

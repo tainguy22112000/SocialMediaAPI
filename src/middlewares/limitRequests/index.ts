@@ -1,11 +1,19 @@
 import { expire, incr, ttl } from '@/utils/limiter'
-import { RequestHandler } from 'express'
+import { NextFunction, Request, Response } from 'express'
 import createHttpError from 'http-errors'
 
 const TTL_SECONDS = 60
 const LIMIT_REQUESTS = 5
 
-export const limitRequests: RequestHandler = async (req, res, next) => {
+interface ILimitRequest extends Request {
+  limit: number
+}
+
+export const limitRequests = async (
+  req: ILimitRequest,
+  res: Response,
+  next: NextFunction
+) => {
   const ipUser = (req.headers['x-forwarded-for'] ||
     req.connection.remoteAddress) as string
 
@@ -27,7 +35,7 @@ export const limitRequests: RequestHandler = async (req, res, next) => {
     if (numberRequest > LIMIT_REQUESTS) {
       next(createHttpError.TooManyRequests())
     }
-    req.body = numberRequest
+    req.limit = numberRequest
     next()
   } catch (err) {
     return next(err)

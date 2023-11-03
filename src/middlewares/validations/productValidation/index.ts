@@ -1,2 +1,2 @@
-export * from './userValidation'
+export * from './productSchema'
 export * from './productValidation'

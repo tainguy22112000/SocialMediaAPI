@@ -10,7 +10,15 @@ const baseSchema = {
 }
 
 const userSchema = {
-  register: Joi.object(baseSchema),
+  register: Joi.object({
+    ...baseSchema,
+    firstName: Joi.string().max(20).required(),
+    lastName: Joi.string().max(20).required(),
+    dateOfBirth: Joi.string().max(20),
+    phoneNumber: Joi.string().max(20),
+    gender: Joi.string().max(20).required().valid('male', 'female'),
+    bio: Joi.string().max(256)
+  }),
   registerOtp: Joi.object({ email: baseSchema.email }),
   verifyOtp: Joi.object(baseSchema).append({
     otp: Joi.string().length(6).required()

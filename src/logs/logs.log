@@ -135,3 +135,58 @@
 11/03/2023	14:15:16 --------- idError: c47336bd-d3aa-4dc8-ab0e-8d035ff6beb0 ---- /v1/upload ---- POST ---- Unexpected field
 11/03/2023	14:19:00 --------- idError: a31a4598-c50f-4b5d-babb-ec6429fc48fa ---- /v1/upload ---- POST ---- Unexpected field
 11/03/2023	14:37:48 --------- idError: b2bc79df-eb4a-45b9-a966-33626108006d ---- /v1/upload ---- POST ---- undefined
+11/03/2023	15:45:32 --------- idError: 28f8320b-54f8-4bf7-ac41-782825efacbb ---- /v1/products/create ---- POST ---- Route - /v1/products/create  Not Found
+11/03/2023	15:46:21 --------- idError: 44eb9ec3-2108-44c0-9607-ab56f33a87fc ---- /v1/products/create ---- POST ---- Unauthorized
+11/03/2023	15:49:38 --------- idError: f9ba4e3d-8fc8-4c0e-aec6-d9a85607a381 ---- /v1/products/create ---- POST ---- "value" must be of type object
+11/03/2023	15:51:21 --------- idError: 53494528-b528-4420-8fc5-ce1b2ca711db ---- /v1/products/create ---- POST ---- "value" must be of type object
+11/03/2023	15:53:04 --------- idError: fb22f7f4-6812-433b-acb9-7e001057b7fc ---- /v1/products/create ---- POST ---- "value" must be of type object
+11/03/2023	15:54:32 --------- idError: 25de5e95-4699-4029-9ab6-989555ea67d2 ---- /v1/products/create ---- POST ---- Unexpected token { in JSON at position 6
+11/03/2023	15:54:43 --------- idError: 05b1d1d7-b280-4798-96f1-2939b6915878 ---- /v1/products/create ---- POST ---- "value" must be of type object
+11/03/2023	15:56:28 --------- idError: fb41fd4e-4309-4d5b-bae8-1cf80af97bbc ---- /v1/products/create ---- POST ---- "value" must be of type object
+11/03/2023	15:58:15 --------- idError: e708d198-26bf-466d-8bf8-6e1479b7cd9a ---- /v1/products/create ---- POST ---- "value" must be of type object
+11/03/2023	15:58:40 --------- idError: ab3b489f-29e1-4b21-b414-6fc793defcb4 ---- /v1/products/create ---- POST ---- undefined
+11/03/2023	16:00:40 --------- idError: 44cde13e-17d6-4e8a-9f1a-15404a1ccf71 ---- /v1/products/create ---- POST ---- jwt expired
+11/03/2023	16:01:04 --------- idError: be91058c-0678-4765-8055-930180dc8304 ---- /v1/products/create ---- POST ---- "value" must be of type object
+11/03/2023	16:02:25 --------- idError: f01b73f4-f2a5-47f8-b987-ccb194470b3c ---- /v1/products/create ---- POST ---- "value" must be of type object
+11/03/2023	16:05:54 --------- idError: a5c05817-19a8-413d-8921-0f2a4ee1937b ---- /v1/products/create ---- POST ---- "value" must be of type object
+11/03/2023	16:05:55 --------- idError: c67f15ad-ccb0-4b32-9d99-d80c78cc6e4c ---- /v1/products/create ---- POST ---- "value" must be of type object
+11/03/2023	16:07:12 --------- idError: 4c41cdd7-6d00-4085-80e9-d08ac0373a40 ---- /v1/products/create ---- POST ---- "value" must be of type object
+11/03/2023	16:16:33 --------- idError: 9381c69c-e127-4f16-a50f-6748350eef18 ---- /v1/products/create ---- POST ---- jwt expired
+11/03/2023	16:16:46 --------- idError: 3d46f362-469e-4569-9362-93dc731f51d3 ---- /v1/products/create ---- POST ---- "description" length must be at least 15 characters long
+11/03/2023	16:17:35 --------- idError: 7e1b047a-df1b-42be-8875-f822db5fa498 ---- /v1/products/create ---- POST ---- undefined
+11/03/2023	16:19:32 --------- idError: 462fa6d9-d6ce-4e1a-8003-3bad587348f1 ---- /v1/products/create ---- POST ---- undefined
+11/03/2023	16:20:06 --------- idError: 67f07fd7-3352-44b5-9ae0-e146a00641c3 ---- /v1/products/create ---- POST ---- undefined
+11/03/2023	16:22:01 --------- idError: 2ad62ca2-1fe8-4190-a840-5175d865b45c ---- /v1/products/all ---- GET ---- "name" is required
+11/03/2023	16:22:21 --------- idError: d1a7b1b6-b5e6-44ab-bb7d-6bde115f8169 ---- /v1/products/all ---- GET ---- Unauthorized
+11/03/2023	16:22:51 --------- idError: f8f74601-3146-4200-b2cd-fe9bb767b1ab ---- /v1/products/create ---- POST ---- undefined
+11/03/2023	16:25:03 --------- idError: 1b8d046f-b4bd-4b9f-b98b-4ad7a5f67096 ---- /v1/products/create ---- POST ---- undefined
+11/03/2023	16:28:01 --------- idError: 96bf4c21-6ab9-4e58-850b-bcaa3cfcdb88 ---- /v1/products/create ---- POST ---- undefined
+11/03/2023	16:28:38 --------- idError: 89f22fce-9abe-43c9-b3eb-eeb92e2b7966 ---- /v1/products/create ---- POST ---- undefined
+11/03/2023	16:29:12 --------- idError: 912eba76-aaf1-4b97-ad15-dd677c54ca58 ---- /v1/products/create ---- POST ---- undefined
+11/03/2023	16:36:16 --------- idError: 90479b4e-4dba-4cbd-baaa-82eb0797dcc4 ---- /v1/products/create ---- POST ---- jwt expired
+11/03/2023	16:36:37 --------- idError: bf1592ad-e526-4a45-aa30-d3bae7b2bf00 ---- /v1/products/create ---- POST ---- undefined
+11/03/2023	16:37:14 --------- idError: 0369678c-7247-41b0-8ebd-5e67c9beb06f ---- /v1/products/create ---- POST ---- undefined
+11/03/2023	16:37:38 --------- idError: 30ca36f5-c948-4977-853a-e2fda4e21c14 ---- /v1/products/create ---- POST ---- undefined
+11/03/2023	16:38:12 --------- idError: 35ca5850-6b7a-40db-b27f-3c3aee9bb94b ---- /v1/products/create ---- POST ---- undefined
+11/03/2023	16:40:04 --------- idError: 507587ed-1a57-421e-967b-76f24a81b42c ---- /v1/products/create ---- POST ---- Route - /v1/products/create  Not Found
+11/03/2023	16:40:24 --------- idError: 3f6f7c8c-82a9-425d-b2fa-af0305c84598 ---- /v1/products/create ---- POST ---- Route - /v1/products/create  Not Found
+11/03/2023	16:40:50 --------- idError: dcbce8a8-e19b-4567-a2f5-3c7f59de00a1 ---- /v1/products/create ---- POST ---- Route - /v1/products/create  Not Found
+11/03/2023	16:43:01 --------- idError: c9380f57-81db-44e9-b552-783895e51cfa ---- /v1/products/create/ ---- POST ---- Route - /v1/products/create/  Not Found
+11/03/2023	16:43:04 --------- idError: 245e13d7-6286-4ac1-9fa2-077a56f8a76e ---- /v1/products/create ---- POST ---- Route - /v1/products/create  Not Found
+11/03/2023	16:44:05 --------- idError: 6e6b1c22-009e-4867-bceb-c88f4d69f2fa ---- /v1/products/create ---- POST ---- Route - /v1/products/create  Not Found
+11/03/2023	16:46:13 --------- idError: 12c44790-ce52-4649-93e8-60be0d93e416 ---- /v1/products/create ---- POST ---- Route - /v1/products/create  Not Found
+11/03/2023	16:46:41 --------- idError: a7049277-c89c-4a9f-b909-3e6fbf2d8eb3 ---- /v1/products/create ---- POST ---- jwt expired
+11/03/2023	16:46:59 --------- idError: 1c3e9bb7-6263-4ae1-a65c-d365294c296f ---- /v1/products/create ---- POST ---- Route - /v1/products/create  Not Found
+11/03/2023	16:47:42 --------- idError: e4556e27-8381-462f-bef8-76dd1659c838 ---- /v1/products/create ---- POST ---- Route - /v1/products/create  Not Found
+11/03/2023	16:48:10 --------- idError: 15f6597c-747b-48c0-b2a4-cc79aa2461c9 ---- /v1/products/create ---- POST ---- Route - /v1/products/create  Not Found
+11/03/2023	16:49:01 --------- idError: 3eaa7a8f-9c4f-4035-9290-79c27d82bccf ---- /v1/products/create ---- POST ---- Product validation failed: description: Please provide description, brand: Please product brand, price: Please provide a price, name: Please provide a name
+11/03/2023	16:49:28 --------- idError: a431b8dd-cebd-4c95-9159-acafdab66827 ---- /v1/products/create ---- POST ---- Product validation failed: description: Path `description` (`titan version`) is shorter than the minimum allowed length (15).
+11/03/2023	16:57:05 --------- idError: ed714f0f-4521-45e9-8c39-a32149bacd2f ---- /v1/products/all ---- GET ---- jwt expired
+11/03/2023	16:57:06 --------- idError: bd14f224-0a1a-444f-8ac6-2ccab9b26f8b ---- /v1/products/all ---- GET ---- jwt expired
+11/03/2023	16:57:07 --------- idError: 2241b2f1-3136-4b6e-9635-f94679d53188 ---- /v1/products/all ---- GET ---- jwt expired
+11/03/2023	17:22:40 --------- idError: 16d81a38-4cdb-4574-94a5-dcb4715c14ff ---- /v1/products/create ---- POST ---- jwt expired
+11/03/2023	17:22:53 --------- idError: e2ebaa72-5fdb-42d4-bf1e-fd91bdfec0c9 ---- /v1/products/create ---- POST ---- "specs" is not allowed
+11/03/2023	17:43:32 --------- idError: ed179b25-1535-48d9-afca-eaf142d39c16 ---- /v1/products/create ---- POST ---- jwt expired
+11/03/2023	17:43:45 --------- idError: 4d3a401f-0130-4484-8571-835b9e24b734 ---- /v1/products/create ---- POST ---- "name" is required
+11/03/2023	17:59:42 --------- idError: c68a63a7-a5be-477c-9da8-1f7bde810aac ---- /v1/users/register ---- POST ---- tainguyhh3@gmail.com has been already registered
+11/03/2023	17:59:49 --------- idError: 016355a6-8bb9-48f6-8add-b289621e98c6 ---- /v1/users/register ---- POST ---- User validation failed: lastName: Path `lastName` is required., firstName: Path `firstName` is required.

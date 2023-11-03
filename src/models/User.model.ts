@@ -8,17 +8,14 @@ import {
 } from 'mongoose'
 
 const UserSchema: Schema<IUserDocument> = new Schema({
-  username: {
-    type: String,
-    lowercase: true,
-    unique: true,
-    required: true
-  },
-
-  password: {
-    type: String,
-    required: true
-  }
+  username: { type: String, lowercase: true, unique: true, required: true },
+  firstName: { type: String, required: true, maxlength: 20 },
+  lastName: { type: String, required: true, maxlength: 20 },
+  dateOfBirth: { type: String, maxlength: 20 },
+  phoneNumber: { type: String, required: false, trim: true, maxlength: 20 },
+  gender: { type: String },
+  bio: { type: String, required: false, maxlength: 256 },
+  password: { type: String, required: true }
 })
 
 UserSchema.pre(
