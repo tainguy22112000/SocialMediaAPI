@@ -125,3 +125,13 @@
 10/26/2023	18:06:22 --------- idError: f06aba0c-e8c4-4b41-8f62-92f2c99b22d0 ---- /v1/users/list ---- GET ---- Too Many Requests
 10/30/2023	16:34:28 --------- idError: ba848c6f-beab-4d2c-b8d6-befc77321c73 ---- /v1/users/list ---- GET ---- jwt expired
 10/30/2023	16:34:55 --------- idError: 49ce178e-f22d-4c0f-89f1-0b1420ce6482 ---- /v1/users/list ---- GET ---- Too Many Requests
+11/03/2023	13:57:02 --------- idError: d1351c93-76ff-4b69-8807-3c524a400a15 ---- /v1/upload ---- POST ---- Route - /v1/upload  Not Found
+11/03/2023	13:57:43 --------- idError: 8636297e-fb9f-4803-bddd-3109a24886ee ---- /v1/upload ---- POST ---- images is not iterable
+11/03/2023	13:58:41 --------- idError: 601d82cf-ace4-49a7-905d-71b75e95c3b5 ---- /v1/upload ---- POST ---- images is not iterable
+11/03/2023	14:11:22 --------- idError: 83476234-8efe-44de-a982-4c0c121e208f ---- /v1/upload ---- POST ---- Unexpected field
+11/03/2023	14:12:59 --------- idError: 183a9eb0-1875-4fec-96ec-73263c3d18ca ---- /v1/upload ---- POST ---- Unexpected field
+11/03/2023	14:13:07 --------- idError: 4c4cc53d-ccab-4a88-a7f3-878c16dc1062 ---- /v1/upload ---- POST ---- Unexpected field
+11/03/2023	14:14:00 --------- idError: 8830b7c3-9434-4e58-9944-d4f954a47066 ---- /v1/upload ---- POST ---- Unexpected field
+11/03/2023	14:15:16 --------- idError: c47336bd-d3aa-4dc8-ab0e-8d035ff6beb0 ---- /v1/upload ---- POST ---- Unexpected field
+11/03/2023	14:19:00 --------- idError: a31a4598-c50f-4b5d-babb-ec6429fc48fa ---- /v1/upload ---- POST ---- Unexpected field
+11/03/2023	14:37:48 --------- idError: b2bc79df-eb4a-45b9-a966-33626108006d ---- /v1/upload ---- POST ---- undefined
