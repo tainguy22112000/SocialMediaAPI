@@ -10,5 +10,6 @@ export const userOtpValidation: RequestHandler = (req, res, next) =>
 
 export const loginValidation: RequestHandler = (req, res, next) =>
   validator(userSchema.login, req.body, next)
+  
 export const verifyOtpValidation: RequestHandler = (req, res, next) =>
   validator(userSchema.verifyOtp, req.body, next)

@@ -91,3 +91,37 @@
 10/11/2023	15:03:11 --------- idError: bb83d89b-8ee4-4c41-be79-445887a214e2 ---- /v1/users/register-otp ---- POST ---- tainguy5@gmail.com has been already registered
 10/11/2023	15:03:16 --------- idError: cb8d56f4-fd7c-4e01-8368-11be9f736fda ---- /v1/users/register-otp ---- POST ---- "email" with value "tainguy5@gma3il.com" fails to match the required pattern: /gmail.com$/
 10/11/2023	15:13:36 --------- idError: 053cab50-6d96-4867-9b2d-3130dbfc8afa ---- /v1/users/register-otp ---- POST ---- tainguy6@gmail.com has been already registered
+10/26/2023	15:58:30 --------- idError: f1ed3f55-5ae4-423f-a007-08b6995619e1 ---- /v1/users/login ---- POST ---- NOAUTH Authentication required.
+10/26/2023	15:58:35 --------- idError: 12bb0fa1-0576-4a16-a545-2a6d2362c14c ---- /v1/users/login ---- POST ---- NOAUTH Authentication required.
+10/26/2023	17:09:01 --------- idError: fdacb29d-cc3e-479c-a698-0c544b31a5e2 ---- /v1/users/list ---- GET ---- Cannot set headers after they are sent to the client
+10/26/2023	17:20:44 --------- idError: ecb5fc50-b0f7-4abb-bff8-8c1ae1f4538d ---- /v1/users/list ---- GET ---- jwt expired
+10/26/2023	17:20:58 --------- idError: 41d97a4a-bb6f-4f09-92b7-18fcff9403bc ---- /v1/users/list ---- GET ---- Cannot set headers after they are sent to the client
+10/26/2023	17:21:54 --------- idError: a0ff2e5c-1a3b-4b8f-aa3e-ba3cff486186 ---- /v1/users/list ---- GET ---- Cannot set headers after they are sent to the client
+10/26/2023	17:23:08 --------- idError: 4ff4489c-ef20-4678-bc80-9e60b8609ebf ---- /v1/users/list ---- GET ---- Cannot set headers after they are sent to the client
+10/26/2023	17:23:14 --------- idError: 830b0068-102d-4f3c-ad09-388105237bc2 ---- /v1/users/list ---- GET ---- Cannot set headers after they are sent to the client
+10/26/2023	17:27:03 --------- idError: f76c219d-d0e3-41ee-ad87-e17bda1800d1 ---- /v1/users/list ---- GET ---- Cannot set headers after they are sent to the client
+10/26/2023	17:27:04 --------- idError: b06ddc30-4c84-4cf9-b978-bde25f99a6ab ---- /v1/users/list ---- GET ---- Cannot set headers after they are sent to the client
+10/26/2023	17:27:07 --------- idError: 30f8aadf-76fb-4ef5-9cc9-7e5c757f40c1 ---- /v1/users/list ---- GET ---- Cannot set headers after they are sent to the client
+10/26/2023	17:28:55 --------- idError: fddd229e-1f4e-431e-b41c-8a5eafd016e7 ---- /v1/users/list ---- GET ---- Cannot set headers after they are sent to the client
+10/26/2023	17:29:01 --------- idError: 38175cfd-5eef-4e8c-bee5-fa9f3638e0cd ---- /v1/users/list ---- GET ---- Cannot set headers after they are sent to the client
+10/26/2023	17:29:02 --------- idError: 8ca9865e-9490-4c67-919f-283a5b26768a ---- /v1/users/list ---- GET ---- Cannot set headers after they are sent to the client
+10/26/2023	17:33:26 --------- idError: 7ae23f90-8e23-4f70-9dce-8902142bf5ab ---- /v1/users/list ---- GET ---- jwt expired
+10/26/2023	17:33:44 --------- idError: 5a73f8f9-86f2-46c1-b0d2-8d9144f0c82b ---- /v1/users/list ---- GET ---- Cannot set headers after they are sent to the client
+10/26/2023	17:34:57 --------- idError: adbcf8f0-761f-41d3-8b7d-147845d834c8 ---- /v1/users/list ---- GET ---- Cannot set headers after they are sent to the client
+10/26/2023	17:35:18 --------- idError: 75c727bf-1e03-4115-81e8-d39124af7de3 ---- /v1/users/list ---- GET ---- Cannot set headers after they are sent to the client
+10/26/2023	17:35:19 --------- idError: 58886083-ace0-4899-abd9-5e002e6b8d87 ---- /v1/users/list ---- GET ---- Cannot set headers after they are sent to the client
+10/26/2023	17:35:19 --------- idError: 72d708fc-497b-4aeb-9ec8-7320ab9d16c1 ---- /v1/users/list ---- GET ---- Cannot set headers after they are sent to the client
+10/26/2023	17:35:20 --------- idError: cec2eeb5-8723-4e7d-97a9-81b19d601398 ---- /v1/users/list ---- GET ---- Cannot set headers after they are sent to the client
+10/26/2023	17:35:20 --------- idError: b84d0431-2e88-48fe-97f8-4e556c2eb05b ---- /v1/users/list ---- GET ---- Cannot set headers after they are sent to the client
+10/26/2023	17:35:22 --------- idError: 03010481-e318-4f90-b9e2-b7f153209c3a ---- /v1/users/list ---- GET ---- Cannot set headers after they are sent to the client
+10/26/2023	18:01:20 --------- idError: ebf07551-d3c9-4c51-864c-f622b5168d80 ---- /v1/users/list ---- GET ---- Too Many Requests
+10/26/2023	18:01:24 --------- idError: e44b95e9-dca7-4d48-9706-8d2a580fc528 ---- /v1/users/list ---- GET ---- Too Many Requests
+10/26/2023	18:01:25 --------- idError: 1c07d10a-c8ff-4dcb-9c66-926b102118bf ---- /v1/users/list ---- GET ---- Too Many Requests
+10/26/2023	18:01:25 --------- idError: 9a44668c-3b31-47b6-8e05-e21ce2bc8631 ---- /v1/users/list ---- GET ---- Too Many Requests
+10/26/2023	18:01:26 --------- idError: 9370705d-d38c-4130-a110-914b6ce049d1 ---- /v1/users/list ---- GET ---- Too Many Requests
+10/26/2023	18:01:27 --------- idError: fa2d16dc-d252-4f19-9af8-c841812ac8b3 ---- /v1/users/list ---- GET ---- Too Many Requests
+10/26/2023	18:05:58 --------- idError: 11fc0c2f-2e5a-41a4-a73c-63f0d909752a ---- /v1/users/list ---- GET ---- Too Many Requests
+10/26/2023	18:06:21 --------- idError: 5bba5a73-addc-40a4-9bb9-118d2f7472ca ---- /v1/users/list ---- GET ---- Too Many Requests
+10/26/2023	18:06:22 --------- idError: f06aba0c-e8c4-4b41-8f62-92f2c99b22d0 ---- /v1/users/list ---- GET ---- Too Many Requests
+10/30/2023	16:34:28 --------- idError: ba848c6f-beab-4d2c-b8d6-befc77321c73 ---- /v1/users/list ---- GET ---- jwt expired
+10/30/2023	16:34:55 --------- idError: 49ce178e-f22d-4c0f-89f1-0b1420ce6482 ---- /v1/users/list ---- GET ---- Too Many Requests

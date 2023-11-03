@@ -1,6 +1,7 @@
 import { auhController } from '@/controllers/auth.controller'
 import { userController } from '@/controllers/user.controller'
 import { verifyAccessToken } from '@/middlewares/auth'
+import { limitRequests } from '@/middlewares/limitRequests'
 import {
   userValidation,
   loginValidation,
@@ -19,7 +20,7 @@ router.post(
 )
 router.post('/users/verify-otp', verifyOtpValidation, userController.verifyOtp)
 router.post('/users/login', loginValidation, auhController.login)
-router.get('/users/list', verifyAccessToken, userController.list)
+router.get('/users/list', verifyAccessToken, limitRequests, userController.list)
 router.post('/users/refresh-token', auhController.refreshToken)
 router.delete('/users/logout', auhController.logout)
 
